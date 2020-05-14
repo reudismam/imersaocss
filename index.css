@@ -41,7 +41,14 @@ header {
 .menu a {
     display: block;
     padding: 10px;
-    background-color: palevioletred;
+}
+
+.menu a:active
+.menu a:hover {
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    transition: background-color 5s, color 2s;
 }
 
 a {
@@ -78,12 +85,14 @@ a:hover {
   line-height: 1.4em;
 }
 
+.contato,
 .portfolio {
     background-color: pink;
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
     font-family: 'Roboto', sans-serif;
     color:whitesmoke;
@@ -129,4 +138,25 @@ a:hover {
     object-fit: cover;
     object-position: left;
     border-radius: 10px;
+    transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.2) rotate(2deg);
+}
+
+.contato .icons{
+    text-align: center;
+}
+
+.contato a {
+    color:whitesmoke;
+    font-size: 4em;
+}
+
+.contato a:active
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+    transition: text-shadow 1s;
 }
